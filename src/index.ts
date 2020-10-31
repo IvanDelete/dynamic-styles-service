@@ -3,7 +3,7 @@ interface StyleElement {
     css: string;
 }
 
-class Index {
+class DynamicStylesService {
     private parent: HTMLElement = document.head;
     private tag: HTMLElement = document.createElement('style');
     private elements: {[id: string]: StyleElement} = {};
@@ -31,4 +31,4 @@ class Index {
     };
 }
 
-export const dynamicStylesService = new Index();
+export const dynamicStylesService = new DynamicStylesService();
